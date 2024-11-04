@@ -1,1 +1,1 @@
-hello world
+je suis pas nouveau sur la platforme, j'ai creer mon compte il deja de cela deux je pense que ces cette anne que j'ai decide d'apprendre la code, dont je pense m'investir et apprendre comment la platforme fonctionne, ce repertoire est dedie a l'apprentisage des bases de HT;L et  CSS, JAVASCRIPT, si tu passe sur mon repot bien vouloir me souligne du contenus qui pourrais m'aider dans ce sens
