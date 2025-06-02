@@ -1,0 +1,68 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+
+}
+.block1_main{
+  height: 500px;
+  width: 40%;
+  background-color: rgba(243, 241, 241, 0.63);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 1px 2px 5px #ccc;
+
+}
+.sub_block1_main{
+  display: flex;
+  justify-content: center;
+  min-width: 100px;
+  min-height: 100px;
+  border-radius: 100px;
+  background-image: url(./IMAGES/leonel.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 5% 0;
+}
+.block2_main{
+  height: 500px;
+  width: 60%;
+  background-color: rgba(243, 241, 241, 0.63);
+  border-radius: 5px;  
+  padding: 20px;
+  box-shadow: 1px 2px 5px #ccc;
+}
+.block2_main div{
+  border-bottom: 0.5px solid #ddd;
+  padding: 10px;
+}
+/* style pour le footer*/
+/* footer{
+  position: fixed;
+  width: 100%;
+  bottom: 200px;
+  grid-area: footer;
+  padding: 1.6em;
+  background-color: rgb(0,114,193,255);
+  color: white;
+  text-align: center;
+  margin: 5px;
+  border-radius: 5px;
+
+ }
+ .social_icon a { 
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+ } */

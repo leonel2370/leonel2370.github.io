@@ -1,0 +1,228 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+ display: grid;
+ grid-template-columns: 300px 1fr;
+ grid-template-areas:  "sidebar navbar" "sidebar main" "sidebar footer";
+ grid-template-rows: auto 1fr auto;
+ min-height: 100vh;
+ /* gap: 5px; */
+}
+/* style pour le navigation*/
+nav{
+  background-color: rgb(254, 87, 59,255);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 1.5rem;
+  padding: 10px;
+ position: sticky;
+ top: 0;
+ grid-area: navbar;
+ border-radius: 5px;
+ margin: 5px;
+ border-radius: 5px;
+ align-items: center;
+ display: flex;
+ justify-content: space-between;
+}
+.nav_1{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav_2{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.sub_nav_2{
+  background-image: url(./IMAGES/leonel.jpg);
+  background-position: center;
+  background-size: contain;
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 25px;
+}
+#logo{
+  display: none;
+}
+
+
+/* style pour l'aisdebar*/
+aside{
+ position: fixed;
+ height: 99vh;
+ width: 290px;
+ grid-area: sidebar;
+ border-radius: 5px;
+ background-color:#fff;
+ padding: 20px;
+ margin: 5px;
+ display: flex;
+ flex-direction: column;
+ gap: 50px;
+ overflow-y: auto;
+}
+.aside_2{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  padding: 5px;
+  overflow-y: auto;
+
+}
+.aside_2 div{
+  border-bottom: 1px solid #ddd;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.aside_2  div a {
+  padding: 1em;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  background-color: rgb(238, 238, 238);
+  padding: 2em;
+}
+.aside_1{
+width: 250px;
+height: 50px;
+background-image: url(./KFOKAM_48_logo.jpeg);
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+
+}
+.fa{
+  margin-right: 10px;
+}
+ 
+/* style pour le main*/
+main{
+  grid-area: main;
+  background-color: white;
+  padding: 1em;
+  border-radius: 5px;
+  margin: 5px;
+  -ms-flex-order: inherit;
+  height: 81vh;
+  overflow: auto;
+ 
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+
+}
+.block1_main{
+  height: 500px;
+  width: 40%;
+  background-color: rgba(243, 241, 241, 0.63);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 1px 2px 5px #ccc;
+
+}
+.sub_block1_main{
+  display: flex;
+  justify-content: center;
+  min-width: 100px;
+  min-height: 100px;
+  border-radius: 100px;
+  background-image: url(./IMAGES/leonel.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 5% 0;
+}
+.block2_main{
+  height: 500px;
+  width: 60%;
+  background-color: rgba(243, 241, 241, 0.63);
+  border-radius: 5px;  
+  padding: 10px;
+  box-shadow: 1px 2px 5px #ccc;
+}
+.block2_main div{
+  border-bottom: 0.5px solid #ddd;
+  padding: 10px;
+}
+/* .main-container{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+} */
+
+iframe#content-frame  {
+  width: 100%;
+  height: 110vh;
+  border: none;
+  /* margin-top: 100vh; */
+}
+/* style du footer*/
+footer{
+ grid-area: footer;
+ padding: 1.6em;
+ background-color: rgb(0,114,193,255);
+ text-align: center;
+ margin: 5px;
+ border-radius: 5px;
+}
+.social_icon a { 
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+ }
+ .social_icon a:hover{
+   border-radius: 50% !important;
+   color: white !important;
+   background-color: black;
+  
+ }
+
+/* media querie pour respinsitive*/
+@media(max-width:800px){
+  body{
+    grid-template-columns:  0px;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    font-size: 1em;
+  }
+  aside{
+    position: fixed;
+    top:70px;
+    height: 82vh;
+    width: 250px;
+    display: none;
+  }
+  .aside_1{
+    width:200px ;
+  }
+
+  #logo{
+    display: block;
+  }
+  .show{
+    display: block;
+  }
+
+
+}
