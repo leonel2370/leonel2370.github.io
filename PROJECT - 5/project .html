@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="project .css">
+  <script src="project.js" defer></script>
+  <title>generateur de mot de passe</title>
+</head>
+<body>
+    <header>
+      <h1>generateur de mot de passe </h1>
+  </header>
+  <div class="container">
+    <div class="main">
+      <forms class="form">
+      
+        <label for=""> Utilisateur</label>
+        <input type="text" required>
+  
+        <label for="pwd">Mot de passe </label>
+        <input type="password" id="pwd"> 
+  
+        <input type="submit" value="Send">
+      </forms>
+    </div>
+  
+    <div id="message" style="display: none;">
+      <h3> le mot de passe doit contenir les elements suivants: </h3>
+      <p id="letter" class="invalid"> une lettre minuscule</p>
+      <p id="capital" class="invalid"> une lettre majuscule</p>
+      <p id="number" class="invalid">un chiffre</p>
+      <p id="length" class="invalid">8-caractere</p>
+    </div>
+    </div>
+</body>
+</html>

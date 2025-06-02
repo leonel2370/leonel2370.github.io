@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #cecece4f;
+  color: #040404;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 62vh;
+  background-color: rgb(243, 241, 241,0.63);  margin-top: 10px;
+
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  @media screen and (max-width:700px) {
+    width:95%;
+    text-align: center;
+  }
+}
+
+.jeu {
+  width: 600px;
+  height: 300px;
+  border: 0;
+  border-bottom: 3px solid #140f0fe2;
+  position: relative;
+  overflow: hidden;
+  @media screen and (max-width:700px) {
+    width:340px;
+    width: 95%;
+    
+  }
+}
+
+
+.control {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 100px;
+
+  @media screen and (max-width:700px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+}
+
+button {
+  cursor: pointer;
+  padding: 15px 20px;
+  color: white;
+  background-color: #000000be;
+  text-transform: capitalize;
+  border-radius: 5px;
+  font-weight: 700;
+  border: 0;
+  margin: 0 10px;
+}
+#start{
+  background-color: green;
+}
+
+.perso {
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.perso img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #333;
+  @media screen and (max-width:700px) {
+    width: 50px;
+    height: 100%;
+    text-align: left;
+    
+  }
+  
+}
+
+.obstacles {
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  position: absolute;
+  bottom:0;
+  left: 580px;
+  animation: obstacleMove 2s linear infinite;
+  @media screen and (max-width:700px) {
+    left:345px;
+    width: 15px;
+    height: 15px;
+    
+  }
+}
+
+@keyframes obstacleMove {
+  0% {
+      left: 580px;
+  }
+  100% {
+      left: -20px;
+  }
+}
+
+.perso.animation {
+  animation: perso-saut 0.5s linear;
+}
+
+@keyframes perso-saut {
+  0% {
+      bottom: 0px;
+  }
+  50% {
+      bottom: 150px;
+  }
+  100% {
+      bottom: 0px;
+  }
+}

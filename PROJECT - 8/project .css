@@ -1,0 +1,104 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+header{
+  text-align: center;
+  padding: 20px 0;
+  background-color: #cecece4f;
+  color: #040404;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 62vh;
+  background-color: rgb(243, 241, 241,0.63);}
+section {
+width: 800px;
+margin-top: 10px;
+display: flex;
+margin-bottom: 50px;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+section .calcul{
+display: flex;
+}
+section .calcul h1 {
+color: #fff;
+font-size:50px;
+margin: 0 20px;
+}
+section h2{
+color: #000;
+font-weight: 100;
+margin: 10px 0;
+}
+section input{
+padding: 10px 0;
+border: 0 ;
+outline: 0;
+font-size: 20px;
+font-weight: bold;
+text-align:center ;
+color: #1b1919;
+border-bottom: 2px solid #ddd ;
+background-color: transparent;
+margin-bottom: 30px;
+}
+section input[type="submit"]{
+font-size: 20px;
+border: none;
+color: #fff;
+font-weight: 700;
+padding: 10px 20px;
+background-color:rgb(0, 114, 193);
+border-radius: 30px;
+cursor: pointer;
+}
+.calcul h1.nb1, .calcul h1.nb2{
+color: #000000be;
+}
+.calcul h1.op{
+color: rgb(94, 94, 94);
+}
+p{
+font-weight: 700;
+font-size: 20px;
+margin: px 0;
+}
+button{
+display: inline-block;
+color:rgb(0, 102, 255);
+font-weight: 700;
+background-color: rgba(115, 190, 255, 0.767);
+font-size: 20px;
+margin-bottom: 10px;
+padding: 10px;
+border-radius: 5px;
+border: 2px solid #1592e6;
+margin: 0 15px;
+display: none;
+}
+.message{
+color:#fff;
+padding: 10px 25px;
+margin-bottom: 50px;
+border-radius: 5px;
+}
+
+.score{
+font-size: 30px;
+line-height: 50px;
+font-weight: bolder;
+color:#000;
+text-align: center;
+margin:20px 10px 0;
+}
